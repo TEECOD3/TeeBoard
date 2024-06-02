@@ -13,17 +13,6 @@ export default function Home() {
   return (
     <div className="">
       <BellIcon />
-      <BellOutline />
-      <div className="bg-black">
-        <Chart />
-        <Menu />
-        <Settings />
-        <UnfoldMore />
-        <Profile />
-        <Support />
-        <Logoicon />
-        <CreatePen />
-      </div>
     </div>
   );
 }
