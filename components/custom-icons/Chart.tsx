@@ -7,11 +7,13 @@ export default function Chart(props: SVGProps<SVGSVGElement>) {
       width="20"
       height="20"
       viewBox="0 0 20 20"
-      fill="none"
+      fill="white"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
+      className="group"
     >
       <path
+        className="fill-current  group-hover:text-white"
         opacity="0.4"
         d="M13.6383 2.00938H6.14202C3.41027 2.00938 1.86252 3.55714 1.86252 6.28889V13.778C1.86252 16.5098 3.41027 18.0575 6.14202 18.0575H13.6383C16.37 18.0575 17.9107 16.5098 17.9107 13.778V6.28889C17.9107 3.55714 16.37 2.00938 13.6383 2.00938Z"
         fill="white"
