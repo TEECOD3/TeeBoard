@@ -9,7 +9,7 @@ type Props = {};
 
 const Sidebar = (props: Props) => {
   return (
-    <div className="bg-[#183087] p-8 z-50 hidden lg:block  lg:relative styled-scrollbar top-0 left-0 border-pale overflow-auto h-full w-full">
+    <div className="bg-[#183087] p-8 z-50 hidden lg:block  lg:relative styled-scrollbar top-0 left-0 overflow-auto h-dvh w-full">
       <div className="capitalize flex gap-x-2 items-center">
         <Logoicon className="size-10" />
         <h1 className="text-3xl font-medium text-white">dlex</h1>
@@ -82,7 +82,7 @@ const Sidebar = (props: Props) => {
           })}
       </div>
 
-      <div className="  absolute bottom-0 flex flex-col w-full left-0 px-8 py-6 mt-20  ">
+      <div className=" flex flex-col w-full left-0  mt-20  ">
         <div className="bg-purple w-full p-4 rounded-lg text-Ts4 capitalize">
           <div className="flex justify-between   text-white font-medium">
             <span>storage</span>
@@ -93,7 +93,7 @@ const Sidebar = (props: Props) => {
             <span className="text-[#E6E7E9]/50">of 15gb</span>
           </div>
 
-          <div className="w-full h-[3px] rounded-lg relative bg-[#E6E7E9]/30 mt-2 -z-1">
+          <div className="w-full h-[3px] rounded-lg relative bg-[#E6E7E9]/30 overflow-hidden mt-2 -z-1">
             <div className="absolute w-[25%] top-0 left-0 bg-white z-20 h-full"></div>
           </div>
         </div>
