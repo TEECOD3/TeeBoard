@@ -1,9 +1,6 @@
 import CreatePenWhite from "@/components/custom-icons/CreatePenwhite";
 import userprofileimage from "@/public/images/10002.jpg";
-import {
-  AlbumIcon,
-  NotepadTextDashed
-} from "lucide-react";
+import { AlbumIcon, NotepadTextDashed } from "lucide-react";
 import Image from "next/image";
 import { ReactNode } from "react";
 import ChevronCard from "./ChevronCard";
@@ -64,7 +61,7 @@ const UserProfile = (props: Props) => {
           </div>
           <div className="p-5 border-cyan-blue rounded-lg w-full border ">
             <div className="flex justify-between items-center w-[70%] gap-x-3">
-              <p className="font-semibold text-Ts5 text-[#FFA000]">63%</p>
+              <p className="font-semibold text-Ts5 text-[#FFA000]">78%</p>
               <div className="rounded-lg p-2  flex items-center justify-center bg-[#FFA000]">
                 <NotepadTextDashed color="#fff" className="size-6" />
               </div>
@@ -80,7 +77,7 @@ const UserProfile = (props: Props) => {
           </div>
           <div className="p-5 border-cyan-blue rounded-lg w-full border ">
             <div className="flex justify-between items-center w-[70%] gap-x-3">
-              <p className="font-semibold text-Ts5 text-[#EA4C89]">63%</p>
+              <p className="font-semibold text-Ts5 text-[#EA4C89]">34%</p>
               <div className="rounded-lg p-2  flex items-center justify-center bg-[#EA4C89]">
                 <AlbumIcon color="#fff" className="size-6" />
               </div>

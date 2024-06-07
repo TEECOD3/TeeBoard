@@ -28,12 +28,9 @@ const formSchema = z.object({
   password: z
     .string({ message: "password is required to login" })
     .min(6, { message: "minimum of 6 characters is required" }),
-  mobile: z.boolean().default(false).optional(),
 });
 
 const LoginForm = () => {
-  const [data, setdata] = useState({});
-
   const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -115,26 +112,6 @@ const LoginForm = () => {
             )}
           />
 
-          <FormField
-            control={form.control}
-            name="mobile"
-            render={({ field }) => (
-              <FormItem className="flex flex-row items-baseline gap-x-3">
-                <FormControl>
-                  <Checkbox
-                    checked={field.value}
-                    onCheckedChange={field.onChange}
-                    className="accent-dark-blue"
-                  />
-                </FormControl>
-                <div className="text-[0.74rem] lg:text-[0.75rem]">
-                  <FormLabel className="text-[0.74rem] lg:text-[0.75rem] h-full text-dark-blue font-medium">
-                    keep me Logged in
-                  </FormLabel>
-                </div>
-              </FormItem>
-            )}
-          />
           <Button
             type="submit"
             className="w-full bg-[#3855B3] hover:bg-[#3855B3]/60"
