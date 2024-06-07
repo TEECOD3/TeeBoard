@@ -49,7 +49,7 @@ const LoginForm = () => {
   }
   return (
     <div>
-      <p className=" text-[0.6rem] lg:text-[0.75rem] text-black/90 font-medium text-center">
+      <p className=" text-[0.7rem] lg:text-[0.75rem] text-black/90 font-medium text-center">
         Don&apos;t have an account yet?{" "}
         <span className="text-dark-blue">Create an account</span>
       </p>
@@ -81,7 +81,7 @@ const LoginForm = () => {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[0.6rem] lg:text-[0.75rem]">
+                <FormLabel className="text-[0.7rem] lg:text-[0.75rem]">
                   Username
                 </FormLabel>
                 <FormControl>
@@ -99,10 +99,10 @@ const LoginForm = () => {
             render={({ field }) => (
               <FormItem>
                 <div className="flex justify-between">
-                  <FormLabel className="text-[0.6rem] lg:text-[0.75rem]">
+                  <FormLabel className="text-[0.7rem] lg:text-[0.75rem]">
                     Password
                   </FormLabel>
-                  <span className="text-dark-blue text-[0.6rem] lg:text-[0.75rem]">
+                  <span className="text-dark-blue text-[0.7rem] lg:text-[0.75rem]">
                     Remember me
                   </span>
                 </div>
@@ -110,7 +110,7 @@ const LoginForm = () => {
                 <FormControl>
                   <Input placeholder="" {...field} />
                 </FormControl>
-                <FormMessage className="text-[0.6rem] lg:text-[0.75rem] text-red-400" />
+                <FormMessage className="text-[0.7rem] lg:text-[0.75rem] text-red-400" />
               </FormItem>
             )}
           />
@@ -127,8 +127,8 @@ const LoginForm = () => {
                     className="accent-dark-blue"
                   />
                 </FormControl>
-                <div className="text-[0.6rem] lg:text-[0.75rem]">
-                  <FormLabel className="text-[0.6rem] lg:text-[0.75rem] h-full text-dark-blue font-medium">
+                <div className="text-[0.7rem] lg:text-[0.75rem]">
+                  <FormLabel className="text-[0.7rem] lg:text-[0.75rem] h-full text-dark-blue font-medium">
                     keep me Logged in
                   </FormLabel>
                 </div>
