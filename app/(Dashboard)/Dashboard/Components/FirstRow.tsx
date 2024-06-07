@@ -55,8 +55,17 @@ function ExamDetails() {
           spanish Language
         </p>
 
-        <div className="flex">
-          <div className="relative size-10 rounded-full overflow-hidden">
+        <div className="flex items-center">
+          <div className="relative size-10 rounded-full overflow-hidden flex items-center justify-center">
+            <Image
+              src={userprofileimage}
+              alt="user profile image"
+              height={100}
+              width={150}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="relative size-10 rounded-full overflow-hidden -ml-4  border-[3px] border-dark-blue flex items-center justify-center">
             <Image
               src={userprofileimage}
               alt="user profile image"
@@ -65,16 +74,7 @@ function ExamDetails() {
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="relative size-10 rounded-full overflow-hidden -ml-4  border-[3px] border-dark-blue">
-            <Image
-              src={userprofileimage}
-              alt="user profile image"
-              height={150}
-              width={150}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="relative size-10 rounded-full overflow-hidden -ml-4 border-[3px] border-dark-blue">
+          <div className="relative size-10 rounded-full overflow-hidden -ml-4 border-[3px] border-dark-blue flex items-center justify-center">
             <Image
               src={userprofileimage}
               alt="user profile image"

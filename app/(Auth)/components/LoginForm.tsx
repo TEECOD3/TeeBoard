@@ -3,23 +3,22 @@ import { Button } from "@/components/ui/button";
 import google from "@/public/assets/svg/google.svg";
 import Image from "next/image";
 
-import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { z } from "zod";
 
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
-import { Loader2Icon } from "lucide-react";
+import { useState } from "react";
 
 const formSchema = z.object({
   username: z
@@ -27,8 +26,9 @@ const formSchema = z.object({
     .min(6, { message: "minimum of 6 letters required" })
     .max(50),
   password: z
-    .string({ message: "password is required" })
+    .string({ message: "password is required to login" })
     .min(6, { message: "minimum of 6 characters is required" }),
+  mobile: z.boolean().default(false).optional(),
 });
 
 const LoginForm = () => {
@@ -49,7 +49,7 @@ const LoginForm = () => {
   }
   return (
     <div>
-      <p className="text-[0.75rem] text-black font-medium text-center">
+      <p className=" text-[0.6rem] lg:text-[0.75rem] text-black/90 font-medium text-center">
         Don&apos;t have an account yet?{" "}
         <span className="text-dark-blue">Create an account</span>
       </p>
@@ -75,13 +75,15 @@ const LoginForm = () => {
       </div>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField
             control={form.control}
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Username</FormLabel>
+                <FormLabel className="text-[0.6rem] lg:text-[0.75rem]">
+                  Username
+                </FormLabel>
                 <FormControl>
                   <Input placeholder="" {...field} />
                 </FormControl>
@@ -96,11 +98,40 @@ const LoginForm = () => {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm ">Password</FormLabel>
+                <div className="flex justify-between">
+                  <FormLabel className="text-[0.6rem] lg:text-[0.75rem]">
+                    Password
+                  </FormLabel>
+                  <span className="text-dark-blue text-[0.6rem] lg:text-[0.75rem]">
+                    Remember me
+                  </span>
+                </div>
+
                 <FormControl>
                   <Input placeholder="" {...field} />
                 </FormControl>
-                <FormMessage className="text-[10px] text-red-400" />
+                <FormMessage className="text-[0.6rem] lg:text-[0.75rem] text-red-400" />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="mobile"
+            render={({ field }) => (
+              <FormItem className="flex flex-row items-baseline gap-x-3">
+                <FormControl>
+                  <Checkbox
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                    className="accent-dark-blue"
+                  />
+                </FormControl>
+                <div className="text-[0.6rem] lg:text-[0.75rem]">
+                  <FormLabel className="text-[0.6rem] lg:text-[0.75rem] h-full text-dark-blue font-medium">
+                    keep me Logged in
+                  </FormLabel>
+                </div>
               </FormItem>
             )}
           />
