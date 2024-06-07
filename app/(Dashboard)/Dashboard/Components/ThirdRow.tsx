@@ -8,7 +8,7 @@ type Props = {};
 
 const ThirdRow = (props: Props) => {
   return (
-    <section className="w-full flex flex-col lg:flex-row justify-between gap-x-5">
+    <section className="w-full flex flex-col lg:flex-row justify-between gap-x-5 max-lg:gap-y-5">
       <ChevronCard
         icon={<CreatePen />}
         title="Grammer"

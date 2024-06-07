@@ -8,7 +8,7 @@ type Props = {};
 
 const Secondrow = (props: Props) => {
   return (
-    <section className="flex flex-col lg:flex-row gap-x-5">
+    <section className="flex flex-col lg:flex-row gap-x-5 max-lg:gap-y-5">
       <div className="p-5 border-cyan-blue rounded-lg w-full border">
         <GroupInfo />
       </div>
