@@ -11,7 +11,7 @@ const Dashboard = (props: Props) => {
   return (
     <>
       <Topbar />
-      <div className="flex max-lg:mt-10 lg:gap-x-20">
+      <div className="flex max-lg:mt-16 lg:gap-x-20">
         <div className="px-8 mt-5 lg:mt-0 lg:py-20 mb-16 w-full lg:w-[62%]">
           <h2 className="text-[22.95px] font-semibold mb-10 ">
             Progress Dashboard
