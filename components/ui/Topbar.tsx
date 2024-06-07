@@ -16,7 +16,7 @@ type Props = {};
 
 const Topbar = (props: Props) => {
   return (
-    <nav className="lg:hidden flex justify-between py-4 container h-[4rem]">
+    <nav className="fixed top-0 left-0 lg:hidden flex justify-between py-4 container h-[4rem]">
       <div className="flex gap-x-3 items-center ">
         <Sheet>
           <SheetTrigger asChild>
