@@ -1,6 +1,8 @@
 import Check from "@/components/custom-icons/Check";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React from "react";
+import userprofileimage from "@/public/images/10002.jpg";
 
 type Props = {};
 
@@ -53,7 +55,38 @@ function ExamDetails() {
           spanish Language
         </p>
 
-        <div className=""></div>
+        <div className="flex">
+          <div className="relative size-10 rounded-full overflow-hidden">
+            <Image
+              src={userprofileimage}
+              alt="user profile image"
+              height={150}
+              width={150}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="relative size-10 rounded-full overflow-hidden -ml-4  border-[3px] border-dark-blue">
+            <Image
+              src={userprofileimage}
+              alt="user profile image"
+              height={150}
+              width={150}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="relative size-10 rounded-full overflow-hidden -ml-4 border-[3px] border-dark-blue">
+            <Image
+              src={userprofileimage}
+              alt="user profile image"
+              height={150}
+              width={150}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="relative size-10 rounded-full overflow-hidden -ml-4 border-[3px] border-dark-blue  text-dark-blue flex items-center justify-center bg-gray-200">
+            <span>99</span>
+          </div>
+        </div>
       </div>
     </div>
   );
