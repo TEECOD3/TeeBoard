@@ -4,12 +4,19 @@ import { Separator } from "./separator";
 import UnfoldMore from "../custom-icons/UnfoldMore";
 import { Siteconfig } from "@/Config/site";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
-const Sidebar = (props: Props) => {
+const Sidebar = ({ className }: Props) => {
   return (
-    <div className="bg-[#183087] p-8 z-50 hidden lg:block  lg:relative styled-scrollbar top-0 left-0 overflow-auto h-dvh w-full">
+    <div
+      className={cn(
+        `bg-[#183087] p-8 z-50 hidden lg:block  lg:relative styled-scrollbar top-0 left-0 overflow-auto h-dvh w-full ${className}`
+      )}
+    >
       <div className="capitalize flex gap-x-2 items-center">
         <Logoicon className="size-10" />
         <h1 className="text-3xl font-medium text-white">dlex</h1>

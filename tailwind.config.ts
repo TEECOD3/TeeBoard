@@ -29,6 +29,7 @@ const config = {
         Ts5: ["15.3px", "120%"],
       },
       colors: {
+        black: "#181819",
         "dark-blue": "#28439D",
         "red-orange": "#FF9365",
         "cyan-blue": "#E6E7E9",

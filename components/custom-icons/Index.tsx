@@ -13,8 +13,10 @@ import Logoicon from "./LogoIcon";
 import CreatePen from "./CreatePen";
 import Graph from "./Graph";
 import Warn from "./Warn";
+import CreatePenWhite from "./CreatePenwhite";
 
 export {
+  CreatePenWhite,
   Menu,
   Profile,
   Search,
