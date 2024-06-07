@@ -84,7 +84,7 @@ function ExamDetails() {
             />
           </div>
           <div className="relative size-10 rounded-full overflow-hidden -ml-4 border-[3px] border-dark-blue  text-dark-blue flex items-center justify-center bg-gray-200">
-            <span>99</span>
+            <span className="text-[12px]">99+</span>
           </div>
         </div>
       </div>
