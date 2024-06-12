@@ -1,3 +1,3 @@
 # GamePride
 
-Dashboard for GamePride test
+Dashboard for GamePride
