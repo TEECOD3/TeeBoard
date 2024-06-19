@@ -1,3 +1,3 @@
-# GamePride
+#TEE BOARD
 
-Dashboard for GamePride
+Fully responsive DashBoard Design
